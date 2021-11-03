@@ -72,7 +72,9 @@ you should see following output `0.1.3`
 
 Configure `chain-id`
 
-`evmosd config chain-id evmos_9000-1`
+`export CHAIN_ID=evmos_9000-1`
+
+`evmosd config chain-id $CHAIN_ID`
 
 Lets create an environment variable with yours node name, in our example it will be `testnode999`, you could choose any name you want
 
