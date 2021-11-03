@@ -62,6 +62,42 @@ check that evmos installed
 you should see following output `0.1.3`
 
 
+## Step 3 - initialise Node
+
+Configure `chain-id`
+
+`evmosd config chain-id evmos_9000-1`
+
+Lets create an environment variable with yours node name, in our example it will be `testnode999`, you could choose any name you whant
+
+`export NODE_NAME=testnode999`
+
+`evmosd init $NODE_NAME --chain-id evmos_9000-1`
+
+Copy `genesis.json` file to the `~/.evmosd/config/genesis.json`
+
+`curl https://raw.githubusercontent.com/tharsis/testnets/main/arsia_mons/genesis.json > ~/.evmosd/config/genesis.json`
+
+Then verify the correctness of the genesis configuration file:
+
+`evmosd validate-genesis`
+
+You should see following output `File at /root/.evmosd/config/genesis.json is a valid genesis file`
+
+Add Seed Nodes
+
+Open following file `$HOME/.evmosd/config/config.toml` and find following configuration `seeds = "<node-id>@<ip>:<p2p port>"`
+
+You should populate `seed` with the value presented here https://github.com/tharsis/testnets/blob/main/arsia_mons/seeds.txt
+
+Here is an example how it should look like 
+
+`seeds = "c36cec90ded95d162b85f8ecd00ecd7c8849ca75@arsiamons.seed.evmos.org:26656, 3787335176bbb91bf14a67724ebe0f0940ca5afb@evmos-seed.artifact-staking.io:26656, faa31510d9280e74e7f2e767a62023bd5c896c27@evmos-testnet.mercury-nodes.net:29447`
+
+
+
+
+
 
 
 
