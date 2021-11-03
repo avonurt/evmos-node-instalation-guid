@@ -35,6 +35,12 @@ Add /usr/local/go/bin to the PATH environment variable :
 
 `source $HOME/.profile`
 
+check that `go` successfully installed:
+
+`go version`
+
+you should see following output `go version go1.17.2 linux/amd64`
+
 -----TO BE UPDATED------
 
 
