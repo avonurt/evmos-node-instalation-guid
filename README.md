@@ -68,7 +68,7 @@ Configure `chain-id`
 
 `evmosd config chain-id evmos_9000-1`
 
-Lets create an environment variable with yours node name, in our example it will be `testnode999`, you could choose any name you whant
+Lets create an environment variable with yours node name, in our example it will be `testnode999`, you could choose any name you want
 
 `export NODE_NAME=testnode999`
 
