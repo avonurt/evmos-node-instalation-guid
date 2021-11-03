@@ -11,7 +11,7 @@ I am using `Ubunty 18.04` for the instalation.
 
 `sudo apt update && sudo apt upgrade -y`
 
-`sudo apt install make clang pkg-config libssl-dev libclang-dev build-essential git curl ntp jq llvm tmux`
+`sudo apt install make clang pkg-config libssl-dev libclang-dev build-essential git curl ntp jq llvm tmux vim`
 
 ## Step 1 - install evmosd
 
