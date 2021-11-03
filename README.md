@@ -111,7 +111,11 @@ We will use `testnet-key` to setup node
 
 ## Step 5 - Run a Testnet Validator
 
+Befor creating a validator you need to sync to the network. We are going to use `tmux` as an example to run a node in separate session
 
+`tmux new -s evmos`
+
+`evmosd start`
 
 
 
