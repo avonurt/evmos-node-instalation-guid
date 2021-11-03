@@ -80,7 +80,7 @@ Lets create an environment variable with yours node name, in our example it will
 
 `export NODE_NAME=testnode999`
 
-`evmosd init $NODE_NAME --chain-id evmos_9000-1`
+`evmosd init $NODE_NAME --chain-id $CHAIN_ID`
 
 Copy `genesis.json` file to the `~/.evmosd/config/genesis.json`
 
