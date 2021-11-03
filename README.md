@@ -118,7 +118,23 @@ Befor creating a validator you need to sync to the network. We are going to use 
 `evmosd start`
 
 
-----TO BE UPDATED---
+When node is synced create validator:
+
+```
+evmosd tx staking create-validator \
+  --amount=1000000000000aphoton \
+  --pubkey=$(evmosd tendermint show-validator) \
+  --moniker=$NODE_NAME \
+  --chain-id=$CHAIN_ID \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1000000" \
+  --gas="auto" \
+  --gas-prices="0.025aphoton" \
+  --from=testnet-key
+
+```
 
 
 
