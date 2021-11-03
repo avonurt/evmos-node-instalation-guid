@@ -7,6 +7,12 @@ The purpose of this document is to guid you through instalation procees very qui
 
 I am using `Ubunty 18.04` for the instalation.
 
+## Step 0 - package updates and tools instalation
+
+`sudo apt update && sudo apt upgrade -y`
+
+`sudo apt install make clang pkg-config libssl-dev libclang-dev build-essential git curl ntp jq llvm tmux`
+
 ## Step 1 - install evmosd
 
 ### Step 1.1 - install `Go` language 
