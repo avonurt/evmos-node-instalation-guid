@@ -105,7 +105,7 @@ Here is an example how it should look like
 
 ## Step 4 - creat Evmos key
 
-Creat evmos `testnet-key` using instruction from here https://evmos.dev/testnet/faucet.html.
+Creat evmos `testnet-key` key and request some tokens using instruction from here https://evmos.dev/testnet/faucet.html.
 
 We will use `testnet-key` to setup node
 
