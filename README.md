@@ -103,6 +103,18 @@ Here is an example how it should look like
 `seeds = "c36cec90ded95d162b85f8ecd00ecd7c8849ca75@arsiamons.seed.evmos.org:26656, 3787335176bbb91bf14a67724ebe0f0940ca5afb@evmos-seed.artifact-staking.io:26656, faa31510d9280e74e7f2e767a62023bd5c896c27@evmos-testnet.mercury-nodes.net:29447"`
 
 
+## Step 4 - creat Evmos key
+
+Creat evmos `testnet-key` using instruction from here https://evmos.dev/testnet/faucet.html.
+
+We will use `testnet-key` to setup node
+
+## Step 5 - Run a Testnet Validator
+
+
+
+
+
 
 
 
