@@ -13,9 +13,7 @@ I am using `Ubunty 18.04` for the instalation.
 
 `sudo apt install make clang pkg-config libssl-dev libclang-dev build-essential git curl ntp jq llvm tmux vim`
 
-## Step 1 - install evmosd
-
-### Step 1.1 - install `Go` language 
+## Step 1 - install `Go` language 
 
 At the moment of writing this document Evmos is built using Go version 1.17+
 
@@ -41,7 +39,29 @@ check that `go` successfully installed:
 
 you should see following output `go version go1.17.2 linux/amd64`
 
------TO BE UPDATED------
+## Step 2 - install `evmos`
+
+`git clone https://github.com/tharsis/evmos.git`
+
+`cd evmos`
+
+checkout to the latest version from here: https://github.com/tharsis/evmos/releases
+
+In this example we will checkout to version `v0.1.3`
+
+`git checkout v0.1.3`
+
+install evmos
+
+`make install`
+
+check that evmos installed
+
+`evmosd version`
+
+you should see following output `0.1.3`
+
+
 
 
 
