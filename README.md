@@ -136,8 +136,28 @@ evmosd tx staking create-validator \
 
 ```
 
+# Additional commands
 
+Check active validators:
 
+`evmosd q staking validators -o json --limit=1000 | jq '.validators[] | select(.status=="BOND_STATUS_BONDED")' | jq -r '.tokens + " - " + .description.moniker' | sort -gr | nl`
+
+View account info:
+
+`evmosd q bank balances $ACCOUNT`
+
+Unjail command:
+
+```
+evmosd tx slashing unjail \
+  --from="testnet-key" \
+  --chain-id="evmos_9000-1"
+  
+```
+
+Delegate command:
+
+`evmosd tx staking delegate $ACCOUNT_TO_DELEGATE 1000200270498332004aphoton --gas auto  --from testnet-key`
 
 
 
