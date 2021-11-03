@@ -3,6 +3,12 @@ Evmos node installation guid
 
 Link to the official documentation https://evmos.dev/testnet/join.html
 
+Minimum Requirements:
+- 4 or more physical CPU cores
+- At least 500GB of SSD disk storage
+- At least 16GB of memory (RAM)
+- At least 100mbps network bandwidth
+
 The purpose of this document is to guid you through instalation procees very quickly and to test node setup happy path.
 
 I am using `Ubunty 18.04` for the instalation.
