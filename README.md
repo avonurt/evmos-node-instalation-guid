@@ -118,6 +118,9 @@ Befor creating a validator you need to sync to the network. We are going to use 
 `evmosd start`
 
 
+----TO BE UPDATED---
+
+
 
 
 
