@@ -136,6 +136,44 @@ evmosd tx staking create-validator \
 
 ```
 
+# Run evmosd as a service
+
+create file `evmosd.service` with the following content:
+
+```
+[Unit]
+Description=Evmos Node
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/root/go/bin/evmosd start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+Put file to the following directory: `/etc/systemd/system`
+
+The execute following commands:
+
+`systemctl enable evmosd`
+
+`systemctl start evmosd`
+
+To check logs you could run:
+
+`journalctl -u evmosd -f`
+
+
+
+
 # Additional commands
 
 Check active validators:
@@ -158,6 +196,7 @@ evmosd tx slashing unjail \
 Delegate command:
 
 `evmosd tx staking delegate $ACCOUNT_TO_DELEGATE 1000200270498332004aphoton --gas auto  --from testnet-key`
+
 
 
 
