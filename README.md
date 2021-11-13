@@ -141,7 +141,7 @@ evmosd tx staking create-validator \
 create file `evmosd.service` with the following content:
 
 ```
-[Unit]
+echo "[Unit]
 Description=Evmos Node
 After=network.target
 
@@ -155,7 +155,7 @@ RestartSec=3
 LimitNOFILE=4096
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target" > /etc/systemd/system/evmosd.service
 
 ```
 
