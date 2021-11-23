@@ -199,6 +199,11 @@ Delegate command:
 `evmosd tx staking delegate $ACCOUNT_TO_DELEGATE 1000200270498332004aphoton --gas auto  --from testnet-key`
 
 
+Rewards destribution
+
+`evmosd tx distribution withdraw-all-rewards --from $WALLET --chain-id $CHAIN`
+
+
 
 
 
