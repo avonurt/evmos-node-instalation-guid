@@ -198,6 +198,10 @@ Delegate command:
 
 `evmosd tx staking delegate $ACCOUNT_TO_DELEGATE 1000200270498332004aphoton --gas auto  --from testnet-key`
 
+`evmosd tx staking delegate evmosvaloper1jfdvzp4c3a9lc8fegyrl5sf46p59xuh9z4eg93 9037258182710000000000atevmos --from wallet --keyring-backend os --gas=auto --gas-adjustment 1.4 --gas-prices 0.02atevmos --chain-id evmos_9000-4  --yes --broadcast-mode sync`
+
+
+
 
 Rewards destribution
 
